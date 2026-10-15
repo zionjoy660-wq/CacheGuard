@@ -1,0 +1,13 @@
+# Backend
+fastapi
+uvicorn[standard]
+
+# Machine learning
+numpy
+pandas
+scikit-learn
+joblib
+
+# Notebooks and plots
+jupyter
+matplotlib
