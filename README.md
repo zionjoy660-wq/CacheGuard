@@ -8,11 +8,11 @@ Detecting cache-based covert channels using CPU performance-counter data and mac
 
 | Role | Member | Main folder |
 |------|--------|-------------|
-| Frontend Developer | | `src/frontend/` |
-| Backend Developer | | `src/backend/` |
-| Hardware & Environment Engineer | | `docs/` |
-| Machine Learning Engineer | | `notebooks/`, `models/` |
-| Security & Experimentation Engineer | | `docs/`, `data/raw/` |
+| Frontend Developer | PRAGNA | `src/frontend/` |
+| Backend Developer | SAMEERA | `src/backend/` |
+| Hardware & Environment Engineer | ASHITHA | `docs/` |
+| Machine Learning Engineer | JOY | `notebooks/`, `models/` |
+| Security & Experimentation Engineer | NAKSHATHRA | `docs/`, `data/raw/` |
 
 ## Folder Structure
 
