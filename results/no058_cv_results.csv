@@ -1,0 +1,16 @@
+feature_set,model,accuracy_mean,accuracy_std,precision_mean,precision_std,recall_mean,recall_std,f1_mean,f1_std
+all,Logistic Regression,1.0,0.0,1.0,0.0,1.0,0.0,1.0,0.0
+all,Decision Tree,1.0,0.0,1.0,0.0,1.0,0.0,1.0,0.0
+all,Random Forest,1.0,0.0,1.0,0.0,1.0,0.0,1.0,0.0
+cache_only,Logistic Regression,1.0,0.0,1.0,0.0,1.0,0.0,1.0,0.0
+cache_only,Decision Tree,1.0,0.0,1.0,0.0,1.0,0.0,1.0,0.0
+cache_only,Random Forest,1.0,0.0,1.0,0.0,1.0,0.0,1.0,0.0
+miss_rate_only,Logistic Regression,1.0,0.0,1.0,0.0,1.0,0.0,1.0,0.0
+miss_rate_only,Decision Tree,1.0,0.0,1.0,0.0,1.0,0.0,1.0,0.0
+miss_rate_only,Random Forest,1.0,0.0,1.0,0.0,1.0,0.0,1.0,0.0
+instructions_only,Logistic Regression,1.0,0.0,1.0,0.0,1.0,0.0,1.0,0.0
+instructions_only,Decision Tree,1.0,0.0,1.0,0.0,1.0,0.0,1.0,0.0
+instructions_only,Random Forest,1.0,0.0,1.0,0.0,1.0,0.0,1.0,0.0
+cycles_only,Logistic Regression,0.547,0.0702,0.577,0.0914,0.4,0.1348,0.4626,0.1157
+cycles_only,Decision Tree,0.532,0.0408,0.5301,0.0226,0.7756,0.1494,0.6232,0.0451
+cycles_only,Random Forest,0.5415,0.0319,0.5512,0.0244,0.5522,0.0386,0.5506,0.0204
