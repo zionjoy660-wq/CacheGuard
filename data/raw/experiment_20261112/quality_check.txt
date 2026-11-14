@@ -1,0 +1,50 @@
+CACHEGUARD DATASET QUALITY CHECK
+=============================================
+Metadata entries: 60
+Successful runs: 60
+Failed runs: 0
+Nonzero return codes: 0
+
+Measurement rows: 1800
+Missing required values: 0
+Invalid/nonpositive counter rows: 0
+
+Unique runs in dataset: 60
+Runs with incorrect interval count/order: 0
+
+CLASS BALANCE
+normal: 30 runs, 900 intervals
+suspicious: 30 runs, 900 intervals
+
+MEAN COUNTERS PER MEASUREMENT INTERVAL
+
+NORMAL (n=900)
+  cache_references     mean=505,969,350.5611
+  cache_misses         mean=3,024.7433
+  instructions         mean=4,795,372,684.5544
+  cycles               mean=3,770,873,245.9156
+  cache_miss_rate      mean=0.0000
+
+SUSPICIOUS (n=900)
+  cache_references     mean=299,217,514.9700
+  cache_misses         mean=83,573,499.1500
+  instructions         mean=1,517,615,352.4833
+  cycles               mean=3,763,499,480.5967
+  cache_miss_rate      mean=0.2796
+
+LABEL COMPARISON
+instructions: suspicious/normal mean ratio = 0.3165
+cycles: suspicious/normal mean ratio = 0.9980
+cache_miss_rate: suspicious/normal mean ratio = 40340.8539
+
+FINAL CHECKS
+[PASS] 60 metadata entries
+[PASS] all runs successful
+[PASS] 60 unique dataset runs
+[PASS] 1800 measurement rows
+[PASS] 30 runs per class
+[PASS] no missing values
+[PASS] no invalid counters
+[PASS] 30 intervals per run
+
+Overall: PASS
