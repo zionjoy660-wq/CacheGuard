@@ -20,15 +20,15 @@ The raw experiment measurements are stored separately from the processed dataset
 
 Primary input files:
 
-- `data/experiment_20261112/processed/measurements.csv`
-- `data/experiment_20261112/metadata/run_metadata.csv`
+- `data/raw/experiment_20261112/processed/measurements.csv`
+- `data/raw/experiment_20261112/metadata/run_metadata.csv`
 
 Conversion command:
 
 ```bash
 python src/preprocessing/convert_lab_data.py \
-  --measurements data/experiment_20261112/processed/measurements.csv \
-  --metadata data/experiment_20261112/metadata/run_metadata.csv
+  --measurements data/raw/experiment_20261112/processed/measurements.csv \
+  --metadata data/raw/experiment_20261112/metadata/run_metadata.csv
 ```
 
 Output:

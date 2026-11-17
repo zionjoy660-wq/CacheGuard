@@ -57,7 +57,7 @@ It:
 5. Uses `cpu_cycles` for the CPU-cycle feature.
 6. Recalculates miss rate from cache misses and cache references.
 
-The raw experiment files are not included in the current repository clone.
+The raw experiment files are included under `data/raw/experiment_20261112/` and are retained unchanged.
 
 ## 5. Machine-learning rules
 
