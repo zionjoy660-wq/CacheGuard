@@ -1,7 +1,7 @@
 # Protocol Deviations: Lab Session of 12 November 2026
 
 **Owner:** Ashitha Somisetty (Hardware role)  
-**Status:** Draft
+**Status:** Pending final verification
 
 ## 1. Purpose
 
@@ -33,12 +33,12 @@ This document records the differences between the experiment protocol and what w
 - **Protocol (Section 9):** A list of checks was required before building the dataset.
 - **What happened:** The quality-check script tests the number of metadata entries, successful runs, return codes, missing values, invalid counters, intervals per run, class balance, and counter means for each label. It does not test for outlier runs.
 - **Example:** Run 58 (normal) has approximately 13 million cache references per interval, compared with approximately 500 million in typical normal runs. Its cycles and instructions are normal. The check passed anyway.
-- **Why it matters:** Unusual runs are not flagged automatically. Run 58 was retained in the dataset. The ML results are unchanged without it (see `results/no058_*`).
+- **Why it matters:** Unusual runs are not flagged automatically. Run 58 was retained in the original dataset. A separate sensitivity analysis was performed with Run 58 excluded to evaluate its influence on the ML results (see `results/no058_*`).
 
 ### 2.5 Permission and clean-up
 
 - **Protocol (Section 12):** Performance-counter permission changes require lab permission, and temporary files and compiled binaries should be cleaned up at the end.
-- **What happened:** `kernel.perf_event_paranoid` was temporarily set to 2 so that user-space counters could be read. PERMISSION given by lab assistant sir. 
+- **What happened:** `kernel.perf_event_paranoid` was temporarily set to 2 so that user-space counters could be read. Permission was granted by the lab assistant for this change.
 - **Why it matters:** Permission and cleanup details should be confirmed before final sign-off.
 
 ### 2.6 CPU pinning
@@ -57,7 +57,6 @@ This document records the differences between the experiment protocol and what w
 - The run order was shuffled. The collector's default seed was 42. The longest streak of the same label was 5 runs.
 - All 60 runs returned code 0, ran on CPU 2, and used user-space events only.
 - The terminal prints numbers with Indian-style digit grouping. The collector uses perf's comma-separated output and `LC_ALL=C`.
-
 
 ## 4. Sign-off
 
