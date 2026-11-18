@@ -2,7 +2,7 @@
 
 **Owner:** Nakshathra (Security role)
 
-**Status:** DRAFT. The owner changes this to FINAL after checking every line and confirming the open items.
+**Status:** FINAL
 
 ## 1. Purpose
 
@@ -23,7 +23,7 @@ This file compares `docs/experiment_protocol.md` with the laboratory session and
 | Raw output kept unedited | Collector saves workload stdout and perf stderr in per-run raw `.txt` files; logs are saved separately | Yes |
 | Validation checks before analysis | Quality check passed; no automatic outlier test was performed | Mostly |
 | Permission for counter setting | `protocol_deviations.md` reports permission from the lab assistant to set `kernel.perf_event_paranoid` to 2 | Reported as granted |
-| Cleanup of temporary files and compiled binaries | Cleanup confirmation is not recorded here | Pending confirmation |
+| Cleanup of temporary files and compiled binaries | Ashitha's approved protocol deviations document confirms cleanup | Yes, reported completed |
 
 Actual collection paths:
 - Raw output: `data/experiment_20261112/raw/`
@@ -60,15 +60,14 @@ The Python collector does use `subprocess.run()` to launch `taskset` and `perf`.
 | Does the C workload use the network or open files? | No explicit network or file-opening operations found in the inspected C source. |
 | Do the inspected Python scripts use sudo, network requests, or deletion operations? | No matches in the targeted searches. The scripts do use subprocess execution and experiment-file operations. |
 
-## 4. Open items
+## 4. Remaining experimental limitations
 
-- Nakshathra should confirm with the lab team that temporary files and compiled binaries were cleaned up.
-- The lab assistant's permission for the temporary counter-setting change is reported in `docs/protocol_deviations.md`.
-- The instruction-volume comparison before full collection was not documented as a completed pilot decision. The substantial difference is recorded in `docs/protocol_deviations.md`.
+- No separate pilot experiment was conducted before the main collection. The instruction-volume difference and its implications are documented in `docs/protocol_deviations.md`.
+
 - The sibling hyper-thread on CPU 8 was not controlled or recorded.
 
 ## 5. Sign-off
 
-Reviewed by: (Nakshathra to fill in after checking everything)
+Reviewed and approved by: Nakshathra (Security role)
 
-Date: (fill in after review)
+Date: 18 November 2026

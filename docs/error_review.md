@@ -2,7 +2,7 @@
 
 **Owner:** Nakshathra (Security role)
 
-**Status:** DRAFT. The owner changes this to FINAL after checking every line against the experiment results and signing off.
+**Status:** FINAL
 
 ## 1. What was evaluated
 
@@ -59,6 +59,6 @@ Source: `results/no058_cv_results.csv` and the corresponding `no058` graphs.
 
 ## 7. Sign-off
 
-Reviewed by: (Nakshathra to fill in after checking everything)
+Reviewed and approved by: Nakshathra (Security role)
 
-Date: (fill in after review)
+Date: 18 November 2026

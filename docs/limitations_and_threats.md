@@ -1,7 +1,7 @@
 # Limitations and Threats to Validity (Security role)
 
 **Owner:** Nakshathra (Security role)
-**Status:** DRAFT. The owner changes this to FINAL after checking every line.
+**Status:** FINAL
 
 ## 1. Scope
 
@@ -15,7 +15,7 @@ CacheGuard classifies a controlled, simplified cache-pattern simulation using CP
 4. **Instruction count and miss rate are linked.** Suspicious runs execute about 32% of the normal instructions in the same number of cycles. The likely reason is that the CPU waits on cache misses, but this was not proven. Instruction count alone also separates the classes perfectly, so the experiment cannot show which signal the all-feature models rely on.
 5. **Uncontrolled sibling thread.** Workloads were pinned to CPU 2. The other hardware thread on that core was not controlled or recorded.
 6. **Run 58.** One normal run had about 13 million cache references per second, against about 500 million in typical normal runs. It was kept. The results are unchanged without it. The cause was not found.
-7. **No background noise.** The lab session had no deliberate background load.
+7. **Background noise not evaluated.** No deliberate background load was reported during the lab session. Performance under competing background workloads was not evaluated.
 8. **A simplified stand-in.** The suspicious workload imitates a cache access pattern. It is not a sender and receiver pair, and it is not a real covert channel.
 
 ## 3. What the results show
@@ -35,3 +35,10 @@ CacheGuard classifies a controlled, simplified cache-pattern simulation using CP
 - A background process on the machine.
 - A second machine, or a second session on another day.
 - A suspicious workload that matches the normal instruction rate, to separate cache behaviour from instruction count.
+
+
+## 6. Sign-off
+
+Reviewed and approved by: Nakshathra (Security role)
+
+Date: 18 November 2026
